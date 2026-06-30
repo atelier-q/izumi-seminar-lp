@@ -127,7 +127,7 @@ h3 {
   position: sticky;
   top: 0;
   z-index: 20;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   min-height: 56px;
@@ -135,13 +135,6 @@ h3 {
   border-bottom: 1px solid rgba(215, 208, 199, 0.85);
   background: rgba(247, 245, 241, 0.94);
   backdrop-filter: blur(12px);
-}
-
-.brand {
-  color: var(--accent-dark);
-  font-size: 15px;
-  font-weight: 800;
-  text-decoration: none;
 }
 
 nav {
@@ -161,7 +154,7 @@ nav {
   position: relative;
   isolation: isolate;
   display: flex;
-  min-height: calc(100svh - 56px);
+  min-height: 100svh;
   flex-direction: column;
   justify-content: flex-end;
   overflow: hidden;
@@ -894,7 +887,8 @@ dd {
   }
 
   .site-header {
-    justify-content: space-between;
+    display: flex;
+    justify-content: flex-end;
     min-height: 68px;
     padding: 12px clamp(28px, 5vw, 72px);
   }
